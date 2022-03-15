@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+  }
+  .button-restart{
+    postion:absolute;
+    background-color:orange;
+    color:white;
+    width: max-content;
+    border:none;
+    border-radius:5px;
+    padding:10px 25px;
+    transition-duration: 0.4s
+  }
+  .button-restart:hover{
+    color:grey;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.24), 0 8px 20px 0 rgba(0,0,0,0.19);
+    
+  }
+  .end{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    width:100%;
+    height:100%;
+    color:red;
+    left:50%;
+    top:50%;
+  }
+  .end-game-text{
+    display:flex;
+    align-items:center;
+  }
+  .game{
+    display:none;
+  }
+  .StartGame-button{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:150px;
+    height:50px;
+    background-color:orange;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:10px 25px;
+    transition-duration: 0.4s
+  }
+  .StartGame-button:hover{
+    color:grey;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24), 0 10px 30px 0 rgba(0,0,0,0.19);
+  }
+  .time{
+    justify-content:center;
+    position:absolute;
+    align-items:center;
+    margin-top:20px;
+    right:0px;
+    width:40px;
+    height:20px;
+    background-color:black;
+    opacity:0.5;
+    color:white
+  }
+  .result{
+    justify-content:center;
+    position:absolute;
+    align-items:center;
+    right:0px;
+    width:40px;
+    height:20px;
+    background-color:grey;
+    opacity:0.5;
+    color:white
+  }
+  
+  .head {
+    display: flex;
+   flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+  }
+  .coin{
+    width:30px;
+    height:30px;
+    position:absolute;
+    border-radius:4px;
+  }
+  .coin-black{
+    width:30px;
+    height:30px;
+    position:absolute;
+    background-color:black;
+  }
+  .coin-green{
+    width:30px;
+    height:30px;
+    position:absolute;
+    background-color:green;
+  }
+  .coin-red{
+    width:30px;
+    height:30px;
+    position:absolute;
+    background-color:red;
+  }
+  .player{
+  display: inline-flex;
+  flex-direction: column;
+   align-items:center;
+  }
+  .chest{
+  width:25px;
+  height:40px;
+  background-color:blue;
+    border-radius:10px 10px 0 0;
+  }
+  .eye1{
+    height:3px;
+    width:3px;
+  border-radius: 50%;
+  background-color:black;
+  }
+  .eye2{
+    height:3px;
+    width:3px;
+  border-radius: 50%;
+  background-color:black;
+  }
+  .player-right .eye1{
+   opacity:0;
+    }
+  .player-left .eye2{
+    opacity:0;
+  }
+  .player-back .eye1,.player-back .eye2{
+    opacity:0;
+  }
